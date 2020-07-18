@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: `/Xiaomi/data`
+    baseURL: `https://asddchao.gitee.io/data`
 })
 
 function getDropList () {
