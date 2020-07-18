@@ -1,0 +1,232 @@
+.m-nav {
+    height: 100px;
+    position: relative;
+    width: 100vw;
+    left: 0;
+    background-color: #fff;
+    .m-nav-content {
+        position: absolute;
+        width: 100vw;
+        margin-left: -10px;
+        min-width: 1226px;
+        padding-top: 20px;
+        height: 80px;
+        display: flex;
+        background-color: #fff;
+        z-index: 20;
+        .nav-content {
+            position: relative;
+            display: flex;
+            width: 1226px;
+            margin: 0 auto;
+            height: 80px;
+            .logo {
+                padding-left: 55px;
+                padding-top: 55px;
+                width: 0;
+                height: 0;
+                background-color: #ff6700;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+                display: inline-block;
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    width: 55px;
+                    height: 55px;
+                    background-position: center center;
+                    transition: all 0.1s ease-in-out;
+                }
+
+                &::before {
+                    left: 0;
+                    background-image: url('//s02.mifile.cn/assets/static/image/mi-logo.png');
+                }
+
+                &::after {
+                    left: -55px;
+                    background-image: url('//s02.mifile.cn/assets/static/image/mi-home.png');
+                }
+
+                &:hover {
+                    &::before {
+                        left: 55px;
+                    }
+
+                    &::after {
+                        left: 0;
+                    }
+                }
+            }
+
+            .nav-list {
+                height: 80px;
+                left: -160px;
+                right: 0;
+                margin: auto;
+                width: 600px;
+                line-height: 50px;
+                position: absolute;
+                background-color: #fff;
+                
+                li {
+                    float: left;
+                    cursor: pointer;
+                    padding: 2px 7px;
+
+                    &:hover {
+                        color: #ff6700;
+                    }
+                }
+
+                .showAllItem {
+                    position: absolute;
+                    left: -110px;
+                }
+            }
+
+            .search {
+                margin-top: 10px;
+                position: absolute;
+                right: 0;
+                input {
+                    width: 260px;
+                    height: 50px;
+                    border: 1px solid #ccc;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                }
+
+                button {
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid #ccc;
+                    border-left: none;
+                    outline: none;
+                    background-color: #fff;
+                    font-weight: bolder;
+                    font-size: 20px;
+                    vertical-align: middle;
+
+                    &:hover {
+                        background-color: #ff6700;
+                        color: #fff;
+                    }
+                }
+
+                .changeColor {
+                    border: 1px solid red;
+                    outline: none;
+                }
+
+                .changeColor-btn {
+                    border: 1px solid red;
+                    border-left: none;
+                }
+
+                .search-list {
+                    border: 1px solid red;
+                    width: calc(100% - 62px);
+                    border-top: none;
+                    background-color: #fff;
+                    font-size: 14px;
+                    color: #333;
+                    padding-left: 10px;
+
+                    li {
+                        margin: 5px 0;
+                        cursor: pointer;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .drop-list {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 140px;
+        width: 100vw;
+        height: 200px;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 3px 3px 2px rgba(0, 0, 0, .2);
+
+        ul {
+            // border: 1px solid red;
+            position: absolute;
+            width: 1126px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            left: 0;
+            right: 0;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+
+            li {
+                position: relative;
+                text-align: center;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 100px;
+                    background-color: #ddd;
+                    top: -5px;
+                    left: -10%;
+                }
+
+                &:first-of-type::after {
+                    display: none;
+                }
+
+                img {
+                    width: 160px;
+                    height: 110px;
+                    vertical-align: middle;
+
+                }
+
+                .name {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+
+                .price {
+                    color: #ff6700;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+
+            }
+        }
+    }
+
+    .v-enter,
+    .v-leave-to {
+        transform: translateY(-100%);
+    }
+
+    .v-enter-active,
+    .v-leave-active {
+        transition: all 0.2s ease-in;
+    }
+
+    .v-enter-to,
+    .v-leave {
+        transform: translateY(0);
+    }
+}
