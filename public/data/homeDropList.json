@@ -168,40 +168,40 @@
       "title": "家电",
       "list": [
         {
-          "id": "note-0",
-          "name": "RedmiBook 16",
-          "price": "4699元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3e6c9a677acbb3b0c75d4d0d83e8a695.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "jd-0",
+          "name": "米家互联网空调C1 (一级能效)",
+          "price": "2099元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03dc85cd792904ddc8027b2d781beed8.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-1",
-          "name": "RedmiBook 14II",
-          "price": "4499元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e27b3211230c2b8c21c0ef4efcbc17bc.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "jd-1",
+          "name": "米家互联网空调 (一级能效)",
+          "price": "2699元",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e06b219c5bced9256467b17738a943c6.png?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-2",
-          "name": "Pro 15.6\" 2020款",
-          "price": "5999元起",
-          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=200&h=138"
+          "id": "jd-2",
+          "name": "Redmi全自动波轮洗衣机1A",
+          "price": "788元",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c5d772b7c2a159c3ed7d4e31bd293f18.jpg?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-3",
-          "name": "小米笔记本 Air 13.3\"",
-          "price": "4999元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4878fe85208eb0f5edb043717f13766a.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "jd-3",
+          "name": "米家互联网洗烘一体机10kg",
+          "price": "2199元",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/11b8bca444aba2994fe852993eac9203.png?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-4",
-          "name": "小米游戏本",
-          "price": "6999元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/33c6a31aaee90164ce963801bec48e64.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "jd-4",
+          "name": "米家风冷对开门冰箱 483L",
+          "price": "2299元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-5",
-          "name": "显示器",
-          "price": "2399元",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0f0f2175b9a6d4fdb0f0eeb843398044.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "jd-5",
+          "name": "米家两门冰箱 160L",
+          "price": "929元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/40ad6e8398095e97309a5538b516a2de.jpg?thumb=1&w=200&h=138&f=webp&q=90"
         }
       ]
     },
@@ -209,40 +209,40 @@
       "title": "路由器",
       "list": [
         {
-          "id": "note-0",
-          "name": "RedmiBook 16",
-          "price": "4699元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3e6c9a677acbb3b0c75d4d0d83e8a695.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "router-0",
+          "name": "Redmi路由器 AX5",
+          "price": "249元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/681a92d3e5f03a109558396c99f6a4df.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-1",
-          "name": "RedmiBook 14II",
-          "price": "4499元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e27b3211230c2b8c21c0ef4efcbc17bc.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "router-1",
+          "name": "小米路由器 AX1800",
+          "price": "329元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/27da43294889d049a111e5ff2cdfafe7.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-2",
-          "name": "Pro 15.6\" 2020款",
-          "price": "5999元起",
-          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=200&h=138"
+          "id": "router-2",
+          "name": "小米AloT路由器AX3600",
+          "price": "599元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/359d3c63cc159949d8fe147a11b4bc40.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-3",
-          "name": "小米笔记本 Air 13.3\"",
-          "price": "4999元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4878fe85208eb0f5edb043717f13766a.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "router-3",
+          "name": "Redmi路由器AC2100",
+          "price": "169元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa1e0a4860cf40d34e1192d86691c82c.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-4",
-          "name": "小米游戏本",
-          "price": "6999元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/33c6a31aaee90164ce963801bec48e64.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "router-4",
+          "name": "小米路由器AC2100",
+          "price": "229元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5dd23c09b7eb6471968537fdce629194.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-5",
-          "name": "显示器",
-          "price": "2399元",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0f0f2175b9a6d4fdb0f0eeb843398044.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "router-5",
+          "name": "小米路由器 Mesh",
+          "price": "999元",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ec5be5f93ac0118aeec27b8df4337fc9.jpg?thumb=1&w=200&h=138"
         }
       ]
     },
@@ -250,40 +250,40 @@
       "title": "智能硬件",
       "list": [
         {
-          "id": "note-0",
-          "name": "RedmiBook 16",
-          "price": "4699元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3e6c9a677acbb3b0c75d4d0d83e8a695.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "zn-0",
+          "name": "小米米家智能摄像机云台版",
+          "price": "189元",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2a500be4264c692899b25d86c16403f7.jpg?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-1",
-          "name": "RedmiBook 14II",
-          "price": "4499元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e27b3211230c2b8c21c0ef4efcbc17bc.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "zn-1",
+          "name": "小米小爱老师",
+          "price": "399元起",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e3fb0886fdb13e5ae784b9713b9a0038.jpg?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-2",
-          "name": "Pro 15.6\" 2020款",
-          "price": "5999元起",
-          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=200&h=138"
+          "id": "zn-2",
+          "name": "小米米家智能门锁",
+          "price": "1299元起",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5630aa997c82409ee33b2814c7eb2244.jpg?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-3",
-          "name": "小米笔记本 Air 13.3\"",
-          "price": "4999元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4878fe85208eb0f5edb043717f13766a.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "zn-3",
+          "name": "Redmi小爱触屏音响 8",
+          "price": "349元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dccc32d8e36685485fa89e0f2a580975.png?thumb=1&w=200&h=138&f=webp&q=90"
         },
         {
-          "id": "note-4",
-          "name": "小米游戏本",
-          "price": "6999元起",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/33c6a31aaee90164ce963801bec48e64.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "zn-4",
+          "name": "小米小爱触屏音响",
+          "price": "199元",
+          "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f6e585a4bf5c0f744ca60f19ecd6fadf.jpg?thumb=1&w=200&h=138"
         },
         {
-          "id": "note-5",
-          "name": "显示器",
-          "price": "2399元",
-          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0f0f2175b9a6d4fdb0f0eeb843398044.png?thumb=1&w=200&h=138&f=webp&q=90"
+          "id": "zn-5",
+          "name": "Redmi小爱音响 Play",
+          "price": "79元",
+          "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/17c0c91317ec0def3ecc072fa9480192.png?thumb=1&w=200&h=138&f=webp&q=90"
         }
       ]
     }
