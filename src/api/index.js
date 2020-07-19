@@ -1,9 +1,8 @@
 import axios from 'axios'
-
+const baseURL = process.env.NODE_ENV === 'production' ? './data' : '/data' 
 const instance = axios.create({
-    baseURL: `https://asddchao.gitee.io/data`
+    baseURL
 })
-
 function getDropList () {
     return instance.get('/homeDropList.json');
 }
