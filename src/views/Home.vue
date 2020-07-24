@@ -25,11 +25,23 @@
     <div class="home-bottom">
       <div class="home-bottom-content">
         <shan-gou />
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/17ae6ffbdd4156119e41dec7d85ebced.jpeg?thumb=1&w=1533&h=150&f=webp&q=90" />
         <phone />
-        <other-pub />
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3b86ede4dd31d7c126d56fbdde4f855.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
+        <other-pub :data-list="'家电'" />
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
+        <other-pub :data-list="'智能'" />
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ddec858a9371b4d7833181941520bf8b.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
+        <other-pub :data-list="'搭配'" />
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9880db34d227b6c1df5b45cb7df4f465.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
+        <other-pub :data-list="'配件'" />
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ddec858a9371b4d7833181941520bf8b.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
+        <other-pub :data-list="'周边'" />>
+        <advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
         <m-video-sub />
       </div>
     </div>
+    <tools-bar />
   </div>
 </template>
 
@@ -41,6 +53,8 @@ import ShanGou from '@/components/home/ShanGou';
 import Phone from '@/components/home/Phone';
 import OtherPub from '@/components/home/OtherPub';
 import MVideoSub from '@/components/home/MVideoSub';
+import Advert from '@/components/home/Advert';
+import ToolsBar from '@/components/ToolsBar';
 export default {
   data() {
     return {
@@ -173,7 +187,9 @@ export default {
     ShanGou,
     Phone,
     OtherPub,
-    MVideoSub
+    MVideoSub,
+    Advert,
+    ToolsBar
   }
 };
 </script>

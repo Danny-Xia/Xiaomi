@@ -1,0 +1,140 @@
+{
+    "dataList": {
+        "title": "搭配",
+        "nav": [
+            "热门",
+            "耳机音箱"
+        ],
+        "leftUL": [
+            {
+                "id": "dapei-l-1",
+                "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6874615b3c50e837ffe532eb6ea4ef1a.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+            },
+            {
+                "id": "dapei-l-2",
+                "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a00bdd568dbc2b02f8fe0fa8d1b46f28.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+            }
+        ],
+        "list": {
+            "热门": [
+                {
+                    "id": "dapei-1",
+                    "name": "小米真无线蓝牙耳机 Air 2",
+                    "des": "智能真无线，轻松舒适戴",
+                    "nowPrice": "299元",
+                    "oldPrice": "399元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50649d7b5706f4cd9f658e93db6b6564.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-2",
+                    "name": "高速无线充套装",
+                    "des": "快速无线闪充，Qi充电标准",
+                    "nowPrice": "149元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9eb0178e3bfeb7d170edd641fb4be4bc.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-3",
+                    "name": "Redmi充电宝 10000mAh 标准版 白色",
+                    "des": "10000mAh大电量 ",
+                    "nowPrice": "59元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ea8e42faebf7d76a4cb42b8930cf9e46.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-4",
+                    "name": "Redmi充电宝 20000mAh 快充版",
+                    "des": "大容量，   可上飞机",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eaf70e0e9905de6452f07b1f48fcc386.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-5",
+                    "name": "小米插线板 5孔位",
+                    "des": "多重安全保护",
+                    "nowPrice": "39元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/5dd69c0a-8f4a-b42f-d840-6c5a47f2cd03!250x250.jpg"
+                },
+                {
+                    "id": "dapei-6",
+                    "name": "小米蓝牙耳机AirDots青春版",
+                    "des": "雅致简约，收纳充电盒",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/92af1f21293fabfbf2a112892b864925!250x250.jpg"
+                },
+                {
+                    "id": "dapei-7",
+                    "name": "小米小爱触屏音箱",
+                    "des": "好听，更好看",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "",
+                    "name": "",
+                    "nowPrice": "",
+                    "imgSrc": ""
+                }
+            ],
+            "耳机音箱": [
+                {
+                    "id": "dapei-er-1",
+                    "name": "小米真无线蓝牙耳机 Air 2",
+                    "des": "智能真无线，轻松舒适戴",
+                    "nowPrice": "299元",
+                    "oldPrice": "399元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50649d7b5706f4cd9f658e93db6b6564.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-er-2",
+                    "name": "小米降噪项圈蓝牙耳机",
+                    "des": "无线降噪，静无止境",
+                    "nowPrice": "399元",
+                    "oldPrice": "499元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/faf8668acb2fd80c0afad4d4c4e837ad.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-er-3",
+                    "name": "小米蓝牙耳机AirDots青春版",
+                    "des": "雅致简约，收纳充电盒",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/92af1f21293fabfbf2a112892b864925!250x250.jpg"
+                },
+                {
+                    "id": "dapei-er-4",
+                    "name": "小米小爱音箱 Pro",
+                    "des": "语音遥控5000+品牌主流家电",
+                    "nowPrice": "299元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b619d27877bbc497468c673a317a847.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-er-5",
+                    "name": "小米运动蓝牙耳机青春版",
+                    "des": "音随你动",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e6a35e4dfff70f4195b29e8008716d82.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-er-6",
+                    "name": "小米蓝牙项圈耳机",
+                    "des": "挂在脖子上的好耳机",
+                    "nowPrice": "269元",
+                    "oldPrice": "299元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/838ba427ef55317d8c4911b02c95bb79!250x250.jpg"
+                },
+                {
+                    "id": "dapei-er-7",
+                    "name": "小米双单元半入耳式耳机",
+                    "des": "半入耳式舒适佩戴",
+                    "nowPrice": "59元",
+                    "oldPrice": "69元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/ddf317f34e47eed06d910ee0ffd6b2fc!250x250.jpg"
+                },
+                {
+                    "id": "dapei-er-8",
+                    "name": "小米随身蓝牙音箱",
+                    "nowPrice": "69元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/T1hVY_BTdv1RXrhCrK!125x125.jpg"
+                }
+            ]
+        }
+    }
+}

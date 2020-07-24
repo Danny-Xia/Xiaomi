@@ -1,0 +1,138 @@
+{
+    "dataList": {
+        "title": "周边",
+        "nav": [
+            "热门",
+            "出行"
+        ],
+        "leftUL": [
+            {
+                "id": "zhou-l-1",
+                "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/37dc0898c2624b4130da4631f2d9a675.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+            },
+            {
+                "id": "zhou-l-2",
+                "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/582984b9c56cf3c48382a81528a4dfdf.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+            }
+        ],
+        "list": {
+            "热门": [
+                {
+                    "id": "zhou-hot-1",
+                    "name": "米家飞行员太阳镜 Pro",
+                    "des": "尼龙偏光，轻巧佩戴",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-hot-2",
+                    "name": "小米巨能写中性笔10支装",
+                    "des": "一支顶4支，超长顺滑书写",
+                    "nowPrice": "9.99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/57433a4b991b2a2ddc889f2d8d434655.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-hot-3",
+                    "name": "小米旅行箱 20英寸 布朗熊限量版",
+                    "des": "“国际巨星” LINE FRIENDS布朗熊",
+                    "nowPrice": "299元",
+                    "oldPrice": "399元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c149537ebb0c2cdb977ddd93200074f4.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-hot-4",
+                    "name": "米家迷你保温杯",
+                    "des": "可以随身携带的温度",
+                    "nowPrice": "49元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03d94ee6059481a6adcb6c4c5c572fb4.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-hot-5",
+                    "name": "米家驱蚊器基础版 3个装",
+                    "des": "3个装 长效驱蚊",
+                    "nowPrice": "129元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/41e6890f9d6b7fdb4275c986dc3644e8.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-hot-6",
+                    "name": "3卷装抽绳式垃圾袋",
+                    "des": "让清洁更简单",
+                    "nowPrice": "9.9元",
+                    "oldPrice": "14.9元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/38748fefeef78183ac01356a23dbc5c5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-hot-7",
+                    "name": "贝医生巴氏牙刷 四色装",
+                    "des": "进口刷毛，好品质",
+                    "nowPrice": "39.9元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/413f5e2f-53e7-0879-119c-8b4466feea53!250x250.jpg"
+                },
+                {
+                    "id": "zhou-hot-8",
+                    "name": "8H 乳胶弹簧静音床垫 M3",
+                    "nowPrice": "1599元起",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/eaa7c8e5-2a8c-0d2c-6de7-a6db2068b192!125x125.jpg"
+                }
+            ],
+            "出行": [
+                {
+                    "id": "zhou-chu-1",
+                    "name": "90分框体旅行箱",
+                    "des": "专利轻量合金中框，轻盈坚固",
+                    "nowPrice": "399元起",
+                    "oldPrice": "599元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d26d3a80dd1ab0c6a657f13cb234dade.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-chu-2",
+                    "name": "小米商旅多功能双肩包 2",
+                    "des": "商务旅行多场景，切换无压力",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/47ecc65d37065fde1e71b1b34326e741.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-chu-3",
+                    "name": "米家飞行员太阳镜 Pro",
+                    "des": "尼龙偏光，轻巧佩戴",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccac948e1b8ffb47f1fecde67692e60.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-chu-4",
+                    "name": "自动折叠伞",
+                    "des": "防泼水伞布，轻盈拒水",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/43549b8e-c8cd-0464-17ba-6be26f395ef0!250x250.jpg"
+                },
+                {
+                    "id": "zhou-chu-5",
+                    "name": "最生活毛巾•青春系列",
+                    "des": "3秒吸水，杀菌无刺激",
+                    "nowPrice": "19.9元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/1f4c867b5ccb878b43054f640636c872!250x250.jpg"
+                },
+                {
+                    "id": "zhou-chu-6",
+                    "name": "九号平衡车",
+                    "des": "年轻人的酷玩具",
+                    "nowPrice": "1999元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/T1r_x_BgLT1RXrhCrK!250x250.jpg"
+                },
+                {
+                    "id": "zhou-chu-7",
+                    "name": "小米米家电动滑板车Pro",
+                    "des": "性能提升，动力更强劲",
+                    "nowPrice": "2799元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aabf1a475043266cf4759ec58d0f679c.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zhou-chu-8",
+                    "name": "米家经典方框太阳镜",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c9871569c0b49b769bd74f5cce81e45a.jpg?thumb=1&w=125&h=125&f=webp&q=90"
+                }
+            ]
+        }
+    }
+}

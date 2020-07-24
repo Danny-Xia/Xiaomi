@@ -1,0 +1,198 @@
+{
+    "dataList": {
+        "title": "智能",
+        "nav": [
+            "热门",
+            "安防",
+            "出行"
+        ],
+        "leftUL": [
+           {
+               "id": "zn-l-1",
+               "imgSrc":  "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45c23f5b9a927b2dc49c25277e07727c.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+           },
+           {
+               "id": "zn-l-2",
+               "imgSrc":  "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a660ce095e8f553a9ed1515265f4e9fc.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+           }
+           
+        ],
+        "list": {
+            "热门": [
+                {
+                   "id": "zn-hot-1",
+                   "name": "小米 [小爱老师]",
+                   "des": "英语提分利器",
+                   "nowPrice": "399元",
+                   "oldPrice": "499元",
+                   "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/011dd8493ad62f3793dbb63d9fbd3bc0.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "zn-hot-2",
+                    "name": "小米米家智能门锁 推拉式",
+                    "des": "一步推拉，高端智能门锁",
+                    "nowPrice": "1699元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0baacf6e54cbf89cab2c543cc02344e9.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "zn-hot-3",
+                    "name": "小米小爱音箱 Play",
+                    "des": "听音乐、语音遥控家电",
+                    "nowPrice": "99元",
+                    "oldPrice": "169元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "zn-hot-4",
+                    "name": "小爱音箱万能遥控版",
+                    "des": "传统家电秒变智能",
+                    "nowPrice": "149元",
+                    "oldPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/44a30f0da2aacb66a0f896293ebc703f.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "zn-hot-5",
+                    "name": "米家电饭煲4L",
+                    "des": "890W 立体加热 ",
+                    "nowPrice": "299元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b42e49c6c0208f2de5a2f7a491a3af46.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "zn-hot-6",
+                    "name": "小米手环4",
+                    "des": "大屏彩显，20天超长续航",
+                    "nowPrice": "149元",
+                    "oldPrice": "169元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e850fa029579ba886e3d5c81f00ae534.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "zn-hot-7",
+                    "name": "小米体脂秤2",
+                    "des": "轻松掌握身体体脂率",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "zn-hot-8",
+                    "name": "9号平衡车",
+                    "nowPrice": "1999元",
+                    "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=125&h=125"
+                 }
+            ],
+            "安防": [
+                {
+                    "id": "af-hot-1",
+                    "name": "米家智能门锁 标准锁体 碳素黑",
+                    "des": "一体化活体指纹识别，多种开锁方式",
+                    "nowPrice": "1299元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2f33baec53cc73e2942277640ba6e710.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "af-hot-2",
+                    "name": "米家智能门锁 标准锁体 磨砂金",
+                    "des": "全新磨砂金配色，精湛工艺升级",
+                    "nowPrice": "1499元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1840f64ea310ca8013385885baaf16a8.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "af-hot-3",
+                    "name": "米家智能门锁 推拉式 通用版",
+                    "des": "一步推拉，高端智能门锁",
+                    "nowPrice": "1699元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0baacf6e54cbf89cab2c543cc02344e9.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "af-hot-4",
+                    "name": "米家智能门锁 青春版",
+                    "des": "隐形指纹识别设计 简单一步快进家门",
+                    "nowPrice": "999元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0245498a0e08b87ba8c323871c5d48bc.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "af-hot-5",
+                    "name": "米家智能门锁 霸王锁体 碳素黑",
+                    "des": "一体化活体指纹识别，多种开锁方式",
+                    "nowPrice": "1599元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e83e1ab5947337d7b631e056b3e0f23d.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "af-hot-6",
+                    "name": "米家智能门锁 霸王锁体 磨砂金",
+                    "des": "适配霸王锁体，多种开锁方式",
+                    "nowPrice": "1799元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fa7cdb455f106da904e8c3f6156abc06.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "af-hot-7",
+                    "name": "小米米家小白智能摄像机增强版",
+                    "des": "智能看护， AI你所爱",
+                    "nowPrice": "399元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/98c51f977ac5b590dbaf7b8445b30fa6!250x250.jpg"
+                 },
+                 {
+                    "id": "af-hot-8",
+                    "name": "小米米家智能摄像机云台版",
+                    "nowPrice": "189元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/5a94a17f3e893d9804ede3b06e894460!125x125.jpg"
+                 }
+            ],
+            "出行": [
+                {
+                    "id": "cx-hot-1",
+                    "name": "小米米家电动滑板车",
+                    "des": "便携折叠，自由穿行",
+                    "nowPrice": "1999元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/768992ca-4136-92f1-244a-0194a81a6360!250x250.jpg"
+                 },
+                 {
+                    "id": "cx-hot-2",
+                    "name": "米兔折叠婴儿推车",
+                    "des": "出发去向往的地方",
+                    "nowPrice": "699元",
+                    "imgSrc": "https://i8.mifile.cn/b2c-mimall-media/18a82e7cda6ecbc22ecee7ac927d6ff9!250x250.jpg"
+                 },
+                 {
+                    "id": "cx-hot-3",
+                    "name": "九号平衡车 Plus",
+                    "des": "一个形影不离的新伙伴",
+                    "nowPrice": "3499元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/877d3ce8-68ab-7506-2a78-55a8c0fba946!250x250.png"
+                 },
+                 {
+                    "id": "cx-hot-4",
+                    "name": "米家重启宝",
+                    "des": "便携电动打气筒",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0294e2f3997bf0cffb7bf48361d03588.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "cx-hot-5",
+                    "name": "小米小背包",
+                    "des": "城市休闲，简约设计",
+                    "nowPrice": "24.9元起",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12fe0ea5e8dafecce5ffa65108796683.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "cx-hot-6",
+                    "name": "小米旅行箱 青春版",
+                    "des": "环保材料，轻便重量",
+                    "nowPrice": "199元起",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5b4304d0e62a9c874e83eba0649110ee.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "cx-hot-7",
+                    "name": "骑记电动助力自行车 新国标版 黑色",
+                    "des": "更多助力选择，更多城市风景",
+                    "nowPrice": "2999元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3520b7c57449585bc3185d31b9d9bd08.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                 },
+                 {
+                    "id": "cx-hot-8",
+                    "name": "小米米家对讲机2",
+                    "nowPrice": "449元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d86c1eb8f5525bc4c76c8e0e98db7446.jpg?thumb=1&w=125&h=125&f=webp&q=90"
+                 }
+            ]
+        }
+    }
+}

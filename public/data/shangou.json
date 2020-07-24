@@ -1,0 +1,109 @@
+{
+    "shangou": [
+        {
+            "id": "shangou-0",
+            "title": "日常元素抽纸 青春版 24包/箱",
+            "des": "精选原生竹浆，健康环保",
+            "nowPrice": "27.9",
+            "oldPrice": "32.9元",
+            "imgSrc": "//cdn.cnbj1.fds.api.mi-img.com/mi-mall/b48160e1c150044808c9c8787c140750.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "shangou-1",
+            "title": "自清洁 | 小米互联网空调 1.5匹",
+            "des": "高效制冷/热，全屋互联",
+            "nowPrice": "1799元",
+            "oldPrice": "2699元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1578639130.40822056.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-2",
+            "title": "小米净水器600G 白色",
+            "des": "600加仑通量，流速更快",
+            "nowPrice": "1699元",
+            "oldPrice": "2499元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1555486031.585971.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-3",
+            "title": "米家IH电饭煲 4L 白色",
+            "des": "多才多艺的智能电饭煲",
+            "nowPrice": "499元",
+            "oldPrice": "599元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1593593565.41015924.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-4",
+            "title": "RedmiBook 13 锐龙版 R5 16G 512G SATA SSD 集显 月光银",
+            "des": "高效制冷/热，全屋互联",
+            "nowPrice": "3799元",
+            "oldPrice": "3999元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590401885.61658123.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-5",
+            "title": "Redmi全自动波轮洗衣机1S 8kg 灰色",
+            "des": "小身材大容量，可预约",
+            "nowPrice": "799元",
+            "oldPrice": "899元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1560062441.20748673.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-6",
+            "title": "定频 | 米家空调 大1匹",
+            "des": "出众静音，快速制冷热",
+            "nowPrice": "1499元",
+            "oldPrice": "1799元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2b911be4c2f156bb6e4cf367c6080045.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-7",
+            "title": "米家扫拖机器人 黑色",
+            "des": "扫得干净，拖得彻底",
+            "nowPrice": "1599元",
+            "oldPrice": "1999元",
+            "imgSrc": "//cdn.cnbj1.fds.api.mi-img.com/mi-mall/3e2a4f04bb369ba5668ab30eb336f722.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "shangou-8",
+            "title": "最生活毛巾·Air（10条装） 白色+素蓝",
+            "des": "给生活一条好毛巾",
+            "nowPrice": "99元",
+            "oldPrice": "169元",
+            "imgSrc": "//cdn.cnbj1.fds.api.mi-img.com/mi-mall/2212bbd7c00dbb8ed1db3d6b9ee2341c.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "shangou-9",
+            "title": " 14 Ⅱ R5 8G 512G 银色",
+            "des": "全面屏高性能轻薄本",
+            "nowPrice": "3599元",
+            "oldPrice": "3799元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-10",
+            "title": "圈厨多用途电热锅 白色",
+            "des": "煎烤烙炖蒸焖涮，样样精通",
+            "nowPrice": "169元",
+            "oldPrice": "199元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1589945613.22046687.jpg?thumb=1&w=250&h=250"
+        },
+        {
+            "id": "shangou-11",
+            "title": "自清洁 | 米家互联网空调 大1匹",
+            "des": "变频节能省电，自清洁",
+            "nowPrice": "1599元",
+            "oldPrice": "2299元",
+            "imgSrc": "//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f611ae04c145343ea266df4f54b41f9d.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "shangou-12",
+            "title": "米家空气净化器Pro",
+            "des": "大空间，快循环",
+            "nowPrice": "1099元",
+            "oldPrice": "1499元",
+            "imgSrc": "//cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/b315ba2c-3dc0-1352-3fbf-b23ffad1bb0f.jpg?thumb=1&w=250&h=250"
+        }
+        
+    ]
+}

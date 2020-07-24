@@ -1,0 +1,65 @@
+{
+    "phoneList": [
+        {
+            "id": "phone-1",
+            "name": "小米10 青春版 5G",
+            "des": "50倍潜望式变焦/轻薄5G手机",
+            "nowPrice": "1899元起",
+            "oldPrice": "2099元",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8729282b199b3ec51e31c1b6b15f3f93.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-2",
+            "name": "小米10",
+            "des": "骁龙865/1亿像素相机",
+            "nowPrice": "3799元起",
+            "oldPrice": "3999元",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0099822e42b4428cb25c4cdebc6ca53d.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-3",
+            "name": "Redmi K30 Pro",
+            "des": "双模5G，骁龙865，弹出全面屏",
+            "nowPrice": "2499元起",
+            "oldPrice": "2999元",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1aafa589258a4d9fdf49831b457418d.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-4",
+            "name": "Redmi K30 Pro 变焦版",
+            "des": "双模5G，骁龙865，弹出全面屏",
+            "nowPrice": "3799元起",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cfdbce40301133a287e9e57faa37bdf.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-5",
+            "name": "小米10 Pro",
+            "des": "骁龙865 / 50倍变焦",
+            "nowPrice": "4999元起",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccd09671448c4cdb4a3817f68f788662.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-6",
+            "name": "Redmi K30",
+            "des": "120Hz流速屏，全速热爱",
+            "nowPrice": "1399元起",
+            "oldPrice": "1699元",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2c16238f786e4f93bdb175d7bf21aa47.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-7",
+            "name": "Redmi K30 5G",
+            "des": "双模5G，120Hz流速屏",
+            "nowPrice": "1899元起",
+            "oldPrice": "2299元",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/53641901fbc28cbcdb495b17fdf69e46.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        },
+        {
+            "id": "phone-8",
+            "name": "Redmi 8",
+            "des": "5000mAh超长续航",
+            "nowPrice": "799元",
+            "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d295c4fb500d163a7045dc715b47f808.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+        }
+    ]
+}

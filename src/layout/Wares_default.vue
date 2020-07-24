@@ -155,7 +155,7 @@ export default {
     background: #fff;
     height: 523px !important;
     width: 100%;
-    margin-top: 59px;
+    margin-top: -10px;
   }
 }
 </style>

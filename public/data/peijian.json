@@ -1,0 +1,137 @@
+{
+    "dataList": {
+        "title": "配件",
+        "nav": [
+            "热门",
+            "充电器"
+        ],
+        "leftUL": [
+            {
+                "id": "dapei-l-1",
+                "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/739ebd8abfc2b1be8866a2c1ad87e709.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+            },
+            {
+                "id": "dapei-l-2",
+                "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ffe4182f1d9a5befdf2380ec90ae1620.jpg?thumb=1&w=293&h=375&f=webp&q=90"
+            }
+        ],
+        "list": {
+            "热门": [
+                {
+                    "id": "peijian-1",
+                    "name": "小米USB充电器30W快充版（1A1C）",
+                    "des": "多一种接口，多一种选择",
+                    "nowPrice": "59元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1fba6c4f1a19200778ac3b1671b087cd.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "peijian-2",
+                    "name": "高速无线充套装",
+                    "des": "快速无线闪充，Qi充电标准",
+                    "nowPrice": "149元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9eb0178e3bfeb7d170edd641fb4be4bc.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "peijian-3",
+                    "name": "小米无线充电宝青春版10000mAh",
+                    "des": "能量满满，无线有线都能充",
+                    "nowPrice": "129元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1f32af53d1ad60f4980146f6a2b81019.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "peijian-4",
+                    "name": "米家LED随身灯",
+                    "des": "小巧轻便 5级亮度调节",
+                    "nowPrice": "19.9元",
+                    "imgSrc": "https://i8.mifile.cn/v1/a1/b0ded71f-b235-8f99-ba1c-20f80c3a4231!250x250.jpg"
+                },
+                {
+                    "id": "peijian-5",
+                    "name": "移动电源高配版（10000mAh）",
+                    "des": " 轻薄设计，轻松出行",
+                    "nowPrice": "129元",
+                    "oldPrice": "149元",
+                    "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/553e9c2b-0023-e9a7-3bdb-26ec66a4007c.jpg?thumb=1&w=250&h=250"
+                },
+                {
+                    "id": "peijian-6",
+                    "name": "小米二合一数据线100cm",
+                    "des": "支持快充，安全保护",
+                    "nowPrice": "24.9元",
+                    "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/287594eb-b765-8db1-3255-0a05c4c07440.jpg?thumb=1&w=250&h=250"
+                },
+                {
+                    "id": "peijian-7",
+                    "name": "小米真无线蓝牙耳机 Air 2",
+                    "des": "智能真无线，轻松舒适戴",
+                    "nowPrice": "299元",
+                    "oldPrice": "399元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50649d7b5706f4cd9f658e93db6b6564.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "peijian-8",
+                    "name": "小米9 SE 街头风保护壳",
+                    "nowPrice": "49元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6c19fad90ad73f91e13c97cce2b15d82.jpg?thumb=1&w=125&h=125&f=webp&q=90"
+                }
+            ],
+            "充电器": [
+                {
+                    "id": "dapei-ch-1",
+                    "name": "小米Type-C充电器65W 疾速闪充版",
+                    "des": "疾速闪充",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/971da2015fe533acebbca413f88084ab.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-ch-2",
+                    "name": "小米GaN充电器 Type-C 65W",
+                    "des": "氮化镓黑科技 65W MAX 大功率快充",
+                    "nowPrice": "149元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8fde8a877fd4b12ad88119d9b6bc061.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-ch-3",
+                    "name": "小米立式风冷无线充 30W",
+                    "des": "解锁充电新姿势",
+                    "nowPrice": "199元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/15ac53312f850bfcc73bdc5a185fda8a.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-ch-4",
+                    "name": "小米立式无线充电器 通用快充20W",
+                    "des": "横竖可充，迅速感应边充边玩",
+                    "nowPrice": "99元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb115b0d5e6cc24c39c1ae818b63bf1a.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-ch-5",
+                    "name": "小米无线充电器（通用快充）",
+                    "des": "铝合金外观，金属质感好",
+                    "nowPrice": "69元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/69167d20371cb65e58ad792494d5bf63.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-ch-6",
+                    "name": "米家智能插座蓝牙网关版",
+                    "des": "让传统家电变智能",
+                    "nowPrice": "79元",
+                    "imgSrc": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c85b67f1c4f5e460a4be5cea5858264b.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                },
+                {
+                    "id": "dapei-ch-7",
+                    "name": "米家插线板6位基础版（含3口USB 2A快充）",
+                    "des": "小巧设计，便捷不占地儿",
+                    "nowPrice": "79元",
+                    "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/554198af-55ec-8400-7a04-66a8f3e0dd66.jpg?thumb=1&w=250&h=250"
+                },
+                {
+                    "id": "dapei-ch-8",
+                    "name": "小米插线板（含3口USB 2A快充）",
+                    "nowPrice": "49元",
+                    "imgSrc": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d6484113b03acde1672d50c395c09763.jpg?thumb=1&w=125&h=125"
+                }
+            ]
+        }
+    }
+}

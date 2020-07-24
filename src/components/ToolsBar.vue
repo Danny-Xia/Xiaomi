@@ -1,0 +1,86 @@
+<template>
+  <div class="tool-bar">
+    <ul>
+      <li
+        v-for="item in tools"
+        :key="item.title"
+        @mouseenter="showErweima('open', item.title)"
+        @mouseleave="showErweima('close', item.title)"
+      >
+        <div class="icon">
+          <i :class="item.icon"></i>
+        </div>
+        <p>{{ item.title }}</p>
+      </li>
+      <el-backtop :right="0" :bottom="60" :visibility-height="800">
+        <i class="iconfont iconupward"></i>
+        <p>回顶部</p>
+    </el-backtop>
+    </ul>
+    <div
+      class="er-wei-ma"
+      :class="{'showEr': isShowErweima}"
+      @mouseenter="enterErweima"
+      @mouseleave="leaveErweima"
+    >
+      <div class="jiao"></div>
+      <img src="https://i8.mifile.cn/b2c-mimall-media/93650133310ec1c385487417a472a26c.png" alt />
+      <p class="des">扫码领取新人百元礼包</p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      tools: [
+        {
+          icon: "el-icon-mobile",
+          title: "手机APP",
+        },
+        {
+          icon: "iconfont icontubiaozhizuomoban",
+          title: "个人中心",
+        },
+        {
+          icon: "iconfont iconbuoumaotubiao46",
+          title: "售后服务",
+        },
+        {
+          icon: "iconfont iconkefu",
+          title: "人工客服",
+        },
+        {
+          icon: "iconfont icongouwuche",
+          title: "购物车",
+        },
+      ],
+      isShowErweima: false,
+      timer: null,
+    };
+  },
+  methods: {
+    showErweima(type, title = "手机APP") {
+      if (type === "open" && title === "手机APP") {
+        this.isShowErweima = true;
+      }
+      if (type === "close" && title === "手机APP") {
+        this.timer = setTimeout(() => {
+          this.isShowErweima = false;
+        }, 200);
+      }
+    },
+    enterErweima() {
+      clearTimeout(this.timer);
+    },
+    leaveErweima() {
+      this.showErweima("close");
+    },
+  },
+};
+</script>
+
+<style lang="less" scoped>
+@import "@/assets/css/tools.less";
+</style>
