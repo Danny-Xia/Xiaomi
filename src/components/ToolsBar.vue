@@ -78,7 +78,7 @@ export default {
       isShowErweima: false,
       timer: null,
       isSmall: {
-        isSmall: true,
+        isSmall: false,
       },
     };
   },

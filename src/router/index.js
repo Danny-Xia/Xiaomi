@@ -32,6 +32,12 @@ Vue.use(VueRouter)
     path: '/NotFond',
     name: 'not_fond',
     component: () => import('@/views/NotFond')
+  },
+  {
+    path: '*',
+    redirect () {
+      return '/NotFond'
+    }
   }
 ]
 

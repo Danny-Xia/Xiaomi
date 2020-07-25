@@ -7,7 +7,7 @@
         @mouseenter="openShowList(index)"
         @mouseleave="closeShowList"
       >
-        {{ item.title }}
+        <span>{{ item.title }}</span>
         <i class="el-icon-arrow-right"></i>
       </li>
     </ul>
