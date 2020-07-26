@@ -12,10 +12,15 @@ Vue.use(VueRouter)
     redirect: '/home',
     children: [
       {
-        path: '/home',
+        path: 'home',
         name: 'Home',
         component: () => import('@/views/Home')
       },
+      {
+        path: 'detail/:id',
+        name: 'detail',
+        component: () => import('@/views/Detail')
+      }
     ]
   },
   {

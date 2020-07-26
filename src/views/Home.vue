@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="home-top">
-      <m-nav :nav-list="navList" :isShowAll="false" />
+      <m-nav :isShowAll="false" />
       <div class="main">
         <left-menu cur-page="home" />
         <swiper :dataList="sWiperList" />
@@ -58,44 +58,6 @@ import ToolsBar from '@/components/ToolsBar';
 export default {
   data() {
     return {
-      navList: [
-        {
-          id: 0,
-          title: "小米手机"
-        },
-        {
-          id: 1,
-          title: "Redmi红米"
-        },
-        {
-          id: 2,
-          title: "电视"
-        },
-        {
-          id: 3,
-          title: "笔记本"
-        },
-        {
-          id: 4,
-          title: "家电"
-        },
-        {
-          id: 5,
-          title: "路由器"
-        },
-        {
-          id: 6,
-          title: "智能硬件"
-        },
-        {
-          id: 7,
-          title: "服务"
-        },
-        {
-          id: 8,
-          title: "社区"
-        }
-      ],
       sWiperList: [
         {
           id: "swiper_1",

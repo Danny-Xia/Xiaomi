@@ -1,5 +1,8 @@
 <template>
-  <div class="left-menu" id="left-menu" v-show="showMenu">
+  <div class="left-menu" id="left-menu" 
+  v-show="$store.state.isShowLeftMenu"
+  @mouseenter="enterLeftMenu"
+  >
     <ul class="menu-list">
       <li
         v-for="(item, index) in menuList"
@@ -11,15 +14,17 @@
         <i class="el-icon-arrow-right"></i>
       </li>
     </ul>
-    <div class="show-list" 
-    id="menu-show-list" 
-    v-show="isShowList" 
-    @mouseenter="enterShowList"
-    @mouseleave="leaveShowList">
+    <div
+      class="show-list"
+      id="menu-show-list"
+      v-show="isShowList"
+      @mouseenter="enterShowList"
+      @mouseleave="leaveShowList"
+    >
       <ul>
         <li v-for="(item,index) in showList" :key="index">
           <img :src="item.imgSrc" />
-          <span>{{ item.name }}</span>
+          <router-link tag="span" :to="{name: 'detail', params: {id: item.name}}">{{ item.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -35,26 +40,25 @@ export default {
       showList: [],
       isShowList: false,
       showListTimer: null,
-      showMenu: true
+      showMenu: true,
     };
   },
   created() {
-     
-    this.$api.getMenuList().then(res => {
+    this.$api.getMenuList().then((res) => {
       if (res.statusText === "OK") {
         this.menuList = res.data.menuList;
       }
     });
   },
-  mounted () {
-       const div = document.getElementById('left-menu');
-      if(this.curPage === 'details') {
-          div.className = 'left-menu details';
-          this.showMenu = false;
-      } else {
-          div.className = 'left-menu';
-          this.showMenu = true;
-      }
+  mounted() {
+    const div = document.getElementById("left-menu");
+    if (this.curPage === "details") {
+      div.className = "left-menu details";
+      this.$store.commit('changeIsShowLeftMenu', false)
+    } else {
+      div.className = "left-menu";
+      this.$store.commit('changeIsShowLeftMenu', true)
+    }
   },
   methods: {
     openShowList(index) {
@@ -73,13 +77,16 @@ export default {
         this.isShowList = false;
       }, 100);
     },
-    enterShowList () {
-        clearInterval(this.showListTimer);
+    enterShowList() {
+      clearInterval(this.showListTimer);
     },
-    leaveShowList () {
-        this.closeShowList();
+    leaveShowList() {
+      this.closeShowList();
+    },
+    enterLeftMenu () {
+      clearTimeout(this.$store.state.closeLeftMenuTimer);
     }
-  }
+  },
 };
 </script>
 

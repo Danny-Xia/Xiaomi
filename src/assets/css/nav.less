@@ -3,11 +3,15 @@
     position: relative;
     width: 100vw;
     left: 0;
-    background-color: #fff;
+    top: 20px;
+    // border: 1px solid green;
+    // padding-top: 20px;
+
+    // transform: translateX(10px);
     .m-nav-content {
         position: absolute;
         width: 100vw;
-        margin-left: -10px;
+        // margin-left: -10px;
         min-width: 1226px;
         padding-top: 20px;
         height: 80px;
@@ -15,11 +19,14 @@
         background-color: #fff;
         z-index: 20;
         .nav-content {
-            position: relative;
+            position: absolute;
             display: flex;
             width: 1226px;
-            margin: 0 auto;
+            left: 0;
+            right: 0;
+            margin: auto;
             height: 80px;
+            // border: 1px solid red;
             .logo {
                 padding-left: 55px;
                 padding-top: 55px;
@@ -85,6 +92,7 @@
                 .showAllItem {
                     position: absolute;
                     left: -110px;
+                    height: 70px;
                 }
             }
 
@@ -153,10 +161,10 @@
 
 
     .drop-list {
-        position: fixed;
+        position: relative;
         z-index: 10;
         left: 0;
-        top: 140px;
+        top: 100px;
         width: 100vw;
         height: 200px;
         background-color: #fff;

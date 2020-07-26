@@ -4,7 +4,9 @@
       <div class="nav-content">
         <div class="logo">小米官网</div>
         <ul class="nav-list">
-          <li v-if="isShowAll" class="showAllItem" @mouseenter="changeShowAllList">全部商品分类</li>
+          <li v-if="isShowAll" class="showAllItem" 
+          @mouseenter="changeShowAllList(true)" 
+          @mouseleave="changeShowAllList(false)">全部商品分类</li>
           <li
             v-for="(item, index) in navList"
             :key="item.id"
@@ -52,7 +54,6 @@
 export default {
   data() {
     return {
-      isShowAllList: false,
       inpPla: "电视",
       searchList: [
         { id: 0, content: "Redmi 9 五星高品质" },
@@ -64,6 +65,44 @@ export default {
         { id: 6, content: "米家插线板 快充版 27W" },
         { id: 7, content: "Redmi 手环" }
       ],
+      navList: [
+        {
+          id: 0,
+          title: "小米手机"
+        },
+        {
+          id: 1,
+          title: "Redmi红米"
+        },
+        {
+          id: 2,
+          title: "电视"
+        },
+        {
+          id: 3,
+          title: "笔记本"
+        },
+        {
+          id: 4,
+          title: "家电"
+        },
+        {
+          id: 5,
+          title: "路由器"
+        },
+        {
+          id: 6,
+          title: "智能硬件"
+        },
+        {
+          id: 7,
+          title: "服务"
+        },
+        {
+          id: 8,
+          title: "社区"
+        }
+      ],
       isShowSearchList: false,
       dropList: [
         {
@@ -72,10 +111,11 @@ export default {
       ],
       dropIndex: 0,
       isShowDropList: false,
-      dropTimer: null
+      dropTimer: null,
+      MenuTimer: null
     };
   },
-  props: ["nav-list", "isShowAll"],
+  props: ["isShowAll"],
   methods: {
     inpFocus(e) {
       e.target.className = "changeColor";
@@ -87,8 +127,16 @@ export default {
       document.getElementById("search-btn").className = "";
       this.isShowSearchList = false;
     },
-    changeShowAllList() {
-      this.isShowAllList = true;
+    changeShowAllList(boolean) {
+      
+      if(boolean) {
+        this.$store.commit('changeIsShowLeftMenu', boolean);
+      } else {
+        const timer = setTimeout(() => {
+          this.$store.commit('changeIsShowLeftMenu', boolean);
+        }, 200)
+        this.$store.commit('changeCloseLeftMenuTimer', timer);
+      }
     },
     showDropList(index) {
       if (index > this.dropList.length - 1) {

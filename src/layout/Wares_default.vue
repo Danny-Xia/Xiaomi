@@ -62,6 +62,9 @@ export default {
 
 <style lang="less">
 .el-container {
+  padding: 0;
+  width: 100%;
+  height: 100%;
   .el-header {
     background-color: #333;
     color: #b0b0b0;
@@ -70,11 +73,14 @@ export default {
     height: 40px;
     position: relative;
     z-index: 100;
+    padding: 0;
     .el-header-content {
       height: 40px;
       width: 1226px;
-      margin: 0 auto;
-      position: relative;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
       .drop {
         position: absolute;
         color: #424242;
@@ -148,14 +154,14 @@ export default {
   .el-main {
     overflow: hidden;
     min-height: 100px;
-    margin-left: -20px;
+    padding: 0;
   }
   .el-footer {
     padding: 0;
     background: #fff;
     height: 523px !important;
     width: 100%;
-    margin-top: -10px;
+    // margin-top: 100px;
   }
 }
 </style>

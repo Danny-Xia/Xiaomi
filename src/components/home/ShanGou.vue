@@ -153,7 +153,6 @@ export default {
     },
     move(dir = "right") {
       if (!this.lock) {
-        console.log(this.nowPage, this.totalPage)
         const oUl = document.getElementById("shan-swiper-content");
         this.lock = true;
         dir === 'left' ? this.nowPage -= 1 : this.nowPage += 1;
@@ -190,7 +189,7 @@ export default {
         } else {
           this.move();
         }
-      }, 2000);
+      }, 5000);
     },
     enterShangou() {
       clearInterval(this.autoMoveTimer);

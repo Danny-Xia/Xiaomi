@@ -7,7 +7,9 @@ export default new Vuex.Store({
   state: {
     isShowDrop: false,
     isShowDropTimer: null,
-    gwcIsLoading: true
+    gwcIsLoading: true,
+    isShowLeftMenu: true,
+    closeLeftMenuTimer: null
   },
   mutations: {
     changeIsShowDrop (state, isShow) {
@@ -18,6 +20,12 @@ export default new Vuex.Store({
     },
     changeGwcIsLoading(state, isLoading) {
       state.gwcIsLoading = isLoading;
+    },
+    changeIsShowLeftMenu (state, isShow) {
+      state.isShowLeftMenu = isShow;
+    },
+    changeCloseLeftMenuTimer (state, timer) {
+      state.closeLeftMenuTimer = timer;
     }
   },
   actions: {
