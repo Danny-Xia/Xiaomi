@@ -84,7 +84,6 @@ export default {
   },
   methods: {
     showErweima(type, title = "手机APP") {
-      console.log(type, title)
       if (type === "open" && title === "手机APP") {
         this.isShowErweima = true;
       }

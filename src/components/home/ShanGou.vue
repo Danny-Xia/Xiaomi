@@ -80,12 +80,12 @@ export default {
       listNum: 0, // 数据个数
       oUlLeft: 0, // ul左坐标
       liWidth: 234,
-      lock: false
+      lock: false,
     };
   },
   created() {
     this.getTime();
-    this.$api.getShangouList().then(res => {
+    this.$api.getShangouList().then((res) => {
       if (res.statusText === "OK") {
         const list = res.data.shangou;
         this.listNum = list.length;
@@ -103,34 +103,40 @@ export default {
       this.sessions = new Date(endTime).getHours();
       setInterval(() => {
         this.overTimeSecond--;
-        if(this.overTimeSecond < 10) {
+        if (this.overTimeSecond < 10) {
           this.overTimeSecond = buQi(this.overTimeSecond, 2);
         }
-        if(this.overTimeMinute < 10) {
+        if (this.overTimeMinute < 10) {
           this.overTimeMinute = buQi(this.overTimeMinute, 2);
         }
-        if(this.overTimeSecond === '00') {
+        if (this.overTimeSecond === "00") {
           this.overTimeSecond = 59;
           this.overTimeMinute -= 1;
         }
-        if(this.overTimeMinute === 0) {
+        if (this.overTimeMinute === 0) {
           this.overTimeMinute = 59;
           this.overTimeHours -= 1;
         }
-        if(this.overTimeHours === 0 && this.overTimeMinute === 0 && this.overTimeSecond === 0) {
+        if (
+          this.overTimeHours === 0 &&
+          this.overTimeMinute === 0 &&
+          this.overTimeSecond === 0
+        ) {
           this.overTimeHours = 1;
           this.overTimeMinute = 59;
           this.overTimeSecond = 59;
           this.getTime();
         }
       }, 1000);
-      
-      
+
       function buQi(val, n) {
         return (Array(n).join(0) + val).slice(-n);
       }
     },
     handleLock() {
+      if(this.nowPage === 4) {
+        return;
+      }
       this.lock = false;
     },
     prev() {
@@ -147,10 +153,12 @@ export default {
     },
     move(dir = "right") {
       if (!this.lock) {
-        this.lock = true;
+        console.log(this.nowPage, this.totalPage)
         const oUl = document.getElementById("shan-swiper-content");
+        this.lock = true;
+        dir === 'left' ? this.nowPage -= 1 : this.nowPage += 1;
         let moveRange = 0;
-        dir === "left" ? this.nowPage-- : this.nowPage++;
+        const oUlLeft = oUl.offsetLeft;
         if (this.nowPage === this.totalPage) {
           moveRange = this.liWidth * this.remainder + this.remainder * 14;
         } else {
@@ -160,19 +168,16 @@ export default {
             moveRange = 14 * 4 + this.liWidth * 4; //移动距离
           }
         }
-        const oUlLeft = oUl.offsetLeft;
-        this.oUlLeft =
-          dir === "left" ? oUlLeft + moveRange : oUlLeft - moveRange;
-        this.prevDisabled = false;
-
-        if (this.nowPage === 1) {
-          this.prevDisabled = true;
-        } else if (this.nowPage === this.totalPage) {
+        if(this.nowPage === this.totalPage) {
           this.nextDisabled = true;
+        } else if (this.nowPage === 1){
+          this.prevDisabled = true;
         } else {
-          this.prevDisabled = false;
           this.nextDisabled = false;
+          this.prevDisabled = false;
+          
         }
+        this.oUlLeft = dir === "left" ? oUlLeft + moveRange : oUlLeft - moveRange;
       }
     },
     autoMove() {
@@ -183,19 +188,17 @@ export default {
           this.prevDisabled = true;
           this.nextDisabled = false;
         } else {
-          this.next();
+          this.move();
         }
-      }, 5000);
+      }, 2000);
     },
     enterShangou() {
       clearInterval(this.autoMoveTimer);
     },
     leaveShangou() {
-      if (!this.lock) {
         this.autoMove();
-      }
-    }
-  }
+    },
+  },
 };
 </script>
 

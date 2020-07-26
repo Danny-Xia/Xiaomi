@@ -10,10 +10,12 @@
       <div class="btn el-icon-arrow-right" @click="next"></div>
     </div>
     <div class="sliders">
-      <span v-for="(item, index) in dataList.length" 
-      :key="item" 
-      :class="{'active': index === imgIndex}"
-      @click="handleSlider(index)"></span>
+      <span
+        v-for="(item, index) in dataList.length"
+        :key="item"
+        :class="{'active': index === imgIndex}"
+        @click="handleSlider(index)"
+      ></span>
     </div>
   </div>
 </template>
@@ -56,10 +58,10 @@ export default {
         }
       }, 5000);
     },
-    handleSlider (index) {
-        this.imgIndex = index;
-    }
-  }
+    handleSlider(index) {
+      this.imgIndex = index;
+    },
+  },
 };
 </script>
 
