@@ -9,7 +9,8 @@ export default new Vuex.Store({
     isShowDropTimer: null,
     gwcIsLoading: true,
     isShowLeftMenu: true,
-    closeLeftMenuTimer: null
+    closeLeftMenuTimer: null,
+    isLogin: false
   },
   mutations: {
     changeIsShowDrop (state, isShow) {
@@ -26,6 +27,9 @@ export default new Vuex.Store({
     },
     changeCloseLeftMenuTimer (state, timer) {
       state.closeLeftMenuTimer = timer;
+    },
+    changeIsLogin (state, isLogin) {
+      state.isLogin = isLogin;
     }
   },
   actions: {

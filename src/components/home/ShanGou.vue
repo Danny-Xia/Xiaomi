@@ -154,7 +154,8 @@ export default {
     move(dir = "right") {
       if (!this.lock) {
         const oUl = document.getElementById("shan-swiper-content");
-        this.lock = true;
+       if(oUl) {
+          this.lock = true;
         dir === 'left' ? this.nowPage -= 1 : this.nowPage += 1;
         let moveRange = 0;
         const oUlLeft = oUl.offsetLeft;
@@ -177,6 +178,7 @@ export default {
           
         }
         this.oUlLeft = dir === "left" ? oUlLeft + moveRange : oUlLeft - moveRange;
+       }
       }
     },
     autoMove() {

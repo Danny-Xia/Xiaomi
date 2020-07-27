@@ -152,6 +152,10 @@ export default {
     MVideoSub,
     Advert,
     ToolsBar
+  },
+  created () {
+        const isLogin = document.cookie.indexOf('login=true') > -1;
+        this.$store.commit('changeIsLogin', isLogin);
   }
 };
 </script>

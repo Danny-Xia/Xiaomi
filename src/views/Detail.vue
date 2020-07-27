@@ -1,32 +1,15 @@
 <template>
   <div class="details">
     <div class="details-content">
-        <m-nav :isShowAll="true" class="nav" />
+      <m-nav :isShowAll="true" class="nav" />
       <div class="menu" @mouseleave="leaveLeftMenu">
         <left-menu cur-page="details" class="menu" />
       </div>
       <tools-bar />
-      <div class="main">sdf</div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <nav-bar :title="title" />
+      <div class="main">
+        <router-view class="view" />
+      </div>
     </div>
   </div>
 </template>
@@ -34,22 +17,25 @@
 <script>
 import MNav from "@/components/MNav";
 import LeftMenu from "@/components/LeftMenu";
-import ToolsBar from '@/components/ToolsBar'
+import ToolsBar from "@/components/ToolsBar";
+import NavBar from "@/components/NavBar";
 export default {
   data() {
-    return {};
+    return {
+      title: "",
+    };
   },
   created() {
-    console.log(this.$route);
+    this.title = this.$route.params.id;
   },
   components: {
     MNav,
     LeftMenu,
-    ToolsBar
+    ToolsBar,
+    NavBar,
   },
   methods: {
     leaveLeftMenu() {
-      console.log("====");
       this.$store.commit("changeIsShowLeftMenu", false);
     },
   },
@@ -58,22 +44,18 @@ export default {
 
 <style lang="less" scoped>
 .details {
-  
-  // border: 1px solid red;
   width: 100%;
+  background: #fff;
   .details-content {
-    // width: 1226px;
-    // border: 1px solid red;
-    // margin: 0 auto;
     .nav {
-      // border: 1px solid green;
       transform: translateX(-10px) translateY(-20px);
     }
     .menu {
       width: 1226px;
       margin: 0 auto;
-      // position: relative;
-      // z-index: 1000;
+    }
+    .main {
+      // border: 1px solid green;
     }
   }
 }

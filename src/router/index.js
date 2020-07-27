@@ -19,7 +19,20 @@ Vue.use(VueRouter)
       {
         path: 'detail/:id',
         name: 'detail',
-        component: () => import('@/views/Detail')
+        component: () => import('@/views/Detail'),
+        redirect: 'detail/:id/shop',
+        children: [
+          {
+            path: 'shop',
+            name: 'shop',
+            component: () => import('@/components/detail/Shop')
+          },
+          {
+            path: 'parameter',
+            name: 'parameter',
+            component: () => import('@/components/detail/Parameter')
+          }
+        ]
       }
     ]
   },
