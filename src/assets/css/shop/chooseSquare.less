@@ -1,0 +1,30 @@
+.choose-square {
+    margin-top: 20px;
+    .title {
+        font-size: 18px;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: 292px;
+            height: 42px;
+            line-height: 42px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            text-align: center;
+            transition: all 0.2s ease;
+            color: #757575;
+            cursor: pointer;
+            &:hover {
+                color: #ff6700;
+                border-color: #ff6700;
+            }
+            &.active {
+                color: #ff6700;
+                border-color: #ff6700;
+            }
+        }
+    }
+}
