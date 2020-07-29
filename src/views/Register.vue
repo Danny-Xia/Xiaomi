@@ -1,26 +1,40 @@
 <template>
   <div class="register">
     <div class="main">
-      <img src="https://account.xiaomi.com/static/res/349d9c1/account-static/respassport/acc-2014/img/milogo.png" alt />
+      <img
+        src="https://account.xiaomi.com/static/res/349d9c1/account-static/respassport/acc-2014/img/milogo.png"
+        alt
+      />
       <h1>注册小米账号</h1>
       <div class="inp">
         <label for="reg-account">账号：</label>
-        <input type="text" name="reg-account" id="reg-account" placeholder="请输入要注册的账号" />
+        <input
+          type="text"
+          name="reg-account"
+          id="reg-account"
+          placeholder="请输入要注册的账号"
+          v-model="account"
+        />
       </div>
       <div class="inp">
-          <label for="reg-pwd">密码：</label>
-          <input type="text" name="reg-pwd" id="reg-pwd" placeholder="请输入密码" />
+        <label for="reg-pwd">密码：</label>
+        <input type="password" name="reg-pwd" id="reg-pwd" placeholder="请输入密码" v-model="password" />
       </div>
       <div class="btn-box">
-        <button>立即注册</button>
+        <button @click="handleReg">立即注册</button>
       </div>
-      <p>已阅读并同意：小米 <span>用户协议</span> 和 <span> 隐私政策</span> </p>
+      <p>
+        已阅读并同意：小米
+        <span>用户协议</span> 和
+        <span>隐私政策</span>
+      </p>
     </div>
     <div class="footer">
       <ul>
-        <li v-for="item in footerList" 
-        :key="item.id"
-        :class="{'active': typefaceActive === item.title}"
+        <li
+          v-for="item in footerList"
+          :key="item.id"
+          :class="{'active': typefaceActive === item.title}"
         >{{ item.title }}</li>
       </ul>
       <p>
@@ -44,12 +58,37 @@ export default {
         { id: "footer-4", title: "常见问题" },
         { id: "footer-5", title: "隐私政策" },
       ],
-      typefaceActive: '简体'
+      typefaceActive: "简体",
+      account: "",
+      password: "",
     };
+  },
+  methods: {
+    handleReg() {
+      if (this.account.trim() === "" || this.password.trim() === "") {
+        alert("干啥呢");
+        return;
+      } else {
+        this.$api.register(this.account, this.password).then((res) => {
+          if (res.data.status === "success") {
+            this.account = "";
+            this.password = "";
+            this.$message({
+              message: res.data.msg,
+              type: "success",
+            });
+            document.cookie = "login=true";
+            this.$router.push("/home");
+          } else {
+            this.$message.error(res.data.msg);
+          }
+        });
+      }
+    },
   },
 };
 </script>
 
 <style lang="less" scoped>
-@import '@/assets/css/register/index.less';
+@import "@/assets/css/register/index.less";
 </style>

@@ -27,6 +27,7 @@ export default {
   },
   created() {
     this.title = this.$route.params.id;
+    console.log(this.$store.state.isLogin)
   },
   components: {
     MNav,

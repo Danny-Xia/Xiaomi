@@ -11,7 +11,9 @@
             <service-square 
             v-for="item in dataSource.content" 
             :key="item.contentTitle" 
-            :data-source="item" />
+            :data-source="dataSource.name"
+            :data-self-source="item.contentTitle"
+             />
         </div>
     </div>
 </template>

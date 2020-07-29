@@ -11,8 +11,22 @@
       <el-col :span="6">
         <div class="grid-content bg-purple-light">
           <ul class="right-menu">
-            <router-link :to="item.path" tag="li" v-for="item in rightMenuList" :key="item.path">{{ item.name }}</router-link>
-            <li class="gwc" id="gwc" @mouseenter="mouseEnter($event)" @mouseleave="mouseLeave($event)">
+            <template v-if="isShow">
+              <router-link
+                :to="item.path"
+                tag="li"
+                v-for="item in rightMenuList"
+                :key="item.path"
+              >{{ item.name }}</router-link>
+            </template>
+            <li v-if="!isShow" class="super">超级管理员</li>
+            <li>消息通知</li>
+            <li
+              class="gwc"
+              id="gwc"
+              @mouseenter="mouseEnter($event)"
+              @mouseleave="mouseLeave($event)"
+            >
               <i class="el-icon-shopping-cart-2"></i>
               购物车
               <span>({{ gwcNum }})</span>
@@ -41,20 +55,30 @@ export default {
         "资质证照",
         "协议规则",
         "下载app",
-        "Select Location"
+        "Select Location",
       ],
-      rightMenuList: [{
-        name: '登录',
-        path: '/login'
-      }, {
-        name: '注册',
-        path: '/register'
-      }, {
-        name: '消息通知',
-        path: '#'
-      }],
-      gwcNum: 0
+      rightMenuList: [
+        {
+          name: "登录",
+          path: "/login",
+        },
+        {
+          name: "注册",
+          path: "/register",
+        },
+      ],
+      gwcNum: 0,
+      isShow: true
     };
+  },
+  created () {
+    if(document.cookie.indexOf('login=true') !== -1) {
+      this.isShow = false;
+      this.$store.commit('changeIsLogin', true);
+    } else {
+      this.isShow = true;
+      this.$store.commit('changeIsLogin', false);
+    }
   },
   methods: {
     ...mapMutations(["changeIsShowTimer"]),
@@ -62,20 +86,20 @@ export default {
     mouseEnter(e) {
       const obj = {
         e,
-        className: 'gwc active',
-        isShow: true
+        className: "gwc active",
+        isShow: true,
       };
       this.changeIsShowDrop(obj);
     },
     mouseLeave(e) {
       const obj = {
         e,
-        className: 'gwc',
-        isShow: false
+        className: "gwc",
+        isShow: false,
       };
       this.changeIsShowDrop(obj);
-    }
-  }
+    },
+  },
 };
 </script>
 

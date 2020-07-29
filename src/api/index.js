@@ -4,45 +4,78 @@ const instance = axios.create({
     baseURL
 })
 
-function getDropList () {
+function getDropList() {
     return instance.get('/homeDropList.json');
 }
 
-function getMenuList () {
+function getMenuList() {
     return instance.get('/leftMenu.json');
 }
 
-function getShangouList () {
+function getShangouList() {
     return instance.get('/shangou.json');
 }
 
-function getPhoneList () {
+function getPhoneList() {
     return instance.get('/phone.json');
 }
 
-function getJiadianList () {
+function getJiadianList() {
     return instance.get('/jiadian.json');
 }
 
-function getZhinengList () {
+function getZhinengList() {
     return instance.get('/zhineng.json');
 }
 
-function getDapeiList () {
+function getDapeiList() {
     return instance.get('/dapei.json');
 }
 
-function getPeijianList () {
+function getPeijianList() {
     return instance.get('/peijian.json');
 }
 
-function getZhoubianList () {
+function getZhoubianList() {
     return instance.get('/zhoubian.json');
 }
 
-function getVideosList () {
+function getVideosList() {
     return instance.get('/videos.json');
 }
+
+
+
+function register(account, password) {
+    return axios({
+        url: '/api/student/stuRegister',
+        method: "post",
+        params: {
+
+            appkey: 'Danny_1569673058582',
+            account,
+            password,
+            rePassword: password,
+            username: '超级管理员'
+
+        }
+    })
+}
+
+function login(account, password) {
+    return axios({
+        url: '/api/student/stuLogin',
+        method: "post",
+        params: {
+
+            appkey: 'Danny_1569673058582',
+            account,
+            password
+
+        }
+    })
+}
+
 export default {
     getDropList,
     getMenuList,
@@ -53,5 +86,7 @@ export default {
     getDapeiList,
     getPeijianList,
     getZhoubianList,
-    getVideosList
+    getVideosList,
+    register,
+    login
 }

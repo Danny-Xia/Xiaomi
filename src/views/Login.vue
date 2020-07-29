@@ -9,30 +9,30 @@
       <div class="main-content">
         <div class="login-inp">
           <h4>
-            <span 
-            :class="{'active': accountActive, 'login-item': true}"
-            @click="handleAccountLogin"
+            <span
+              :class="{'active': accountActive, 'login-item': true}"
+              @click="handleAccountLogin"
             >账号登陆</span>
             <span class="gun"></span>
-            <span 
-            :class="{'active': saoActive, 'login-item': true}"
-            @click="handleSaoLogin"
-            >扫码登陆</span>
+            <span :class="{'active': saoActive, 'login-item': true}" @click="handleSaoLogin">扫码登陆</span>
           </h4>
           <div class="account-login" v-show="accountActive">
             <div class="account">
-              <input type="text" placeholder="邮箱/手机号码/小米ID" />
+              <input type="text" placeholder="邮箱/手机号码/小米ID" v-model="account" />
             </div>
             <div class="pwd">
-              <input type="password" placeholder="密码" />
+              <input type="password" placeholder="密码" v-model="password" />
             </div>
             <div class="login-btn-box">
-              <button class="login-btn">登陆</button>
+              <button class="login-btn" @click="handleLogin">登陆</button>
             </div>
             <p class="short-message">
-                <span>手机短信登陆/注册</span>
+              <span>手机短信登陆/注册</span>
             </p>
-            <p><span>立即注册</span>|<span>忘记密码？</span></p>
+            <p>
+              <span>立即注册</span>|
+              <span>忘记密码？</span>
+            </p>
             <div class="other-login">
               <span>其他方式登陆</span>
               <p>
@@ -44,18 +44,22 @@
             </div>
           </div>
           <div class="sao-login" v-show="saoActive">
-              <img src="@/assets/images/login-erw.png">
-              <p>使用<span>小米商城APP</span>扫一扫</p>
-              <p>小米手机可打开 [设置] > [小米账号] 扫码登陆</p>
+            <img src="@/assets/images/login-erw.png" />
+            <p>
+              使用
+              <span>小米商城APP</span>扫一扫
+            </p>
+            <p>小米手机可打开 [设置] > [小米账号] 扫码登陆</p>
           </div>
         </div>
       </div>
     </div>
     <div class="footer">
       <ul>
-        <li v-for="item in footerList" 
-        :key="item.id"
-        :class="{'active': typefaceActive === item.title}"
+        <li
+          v-for="item in footerList"
+          :key="item.id"
+          :class="{'active': typefaceActive === item.title}"
         >{{ item.title }}</li>
       </ul>
       <p>
@@ -81,19 +85,42 @@ export default {
       ],
       accountActive: true,
       saoActive: false,
-      typefaceActive: '简体'
+      typefaceActive: "简体",
+      account: "",
+      password: "",
     };
   },
   methods: {
-      handleAccountLogin () {
-          this.accountActive = true;
-          this.saoActive = false;
-      },
-      handleSaoLogin () {
-          this.saoActive = true;
-          this.accountActive = false;
+    handleAccountLogin() {
+      this.accountActive = true;
+      this.saoActive = false;
+    },
+    handleSaoLogin() {
+      this.saoActive = true;
+      this.accountActive = false;
+    },
+    handleLogin() {
+      if (this.account.trim() === "" || this.password.trim() === "") {
+        alert("干啥呢");
+        return;
+      } else {
+        this.$api.login(this.account, this.password).then((res) => {
+          if (res.data.status === "success") {
+            this.account = "";
+            this.password = "";
+            this.$message({
+              message: res.data.msg,
+              type: "success",
+            });
+            document.cookie = "login=true";
+            this.$router.push("/home");
+          } else {
+            this.$message.error(res.data.msg);
+          }
+        });
       }
-  }
+    },
+  },
 };
 </script>
 

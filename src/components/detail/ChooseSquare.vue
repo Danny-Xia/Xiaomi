@@ -71,7 +71,6 @@ export default {
                 }
 
             }
-            console.log(this.$store.state.shopCurPrice, this.$store.state.phoneROM, this.$store.state.phoneColor)
         }
     }
 }
