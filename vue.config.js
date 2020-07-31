@@ -5,9 +5,11 @@ module.exports = {
         proxy: {
             '/api/student/stuRegister': {
                 target: 'https://open.duyiedu.com',
+                changeOrigin: true
             },
             '/api/student/stuLogin': {
-                target: 'https://open.duyiedu.com'
+                target: 'https://open.duyiedu.com',
+                changeOrigin: true
             }
         }
     }

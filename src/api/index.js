@@ -1,8 +1,11 @@
 import axios from 'axios'
-const baseURL = process.env.NODE_ENV === 'production' ? './data' : '/data'
+const env = process.env.NODE_ENV;
+const baseURL = env === 'production' ? './data' : '/data';
 const instance = axios.create({
     baseURL
 })
+
+
 
 function getDropList() {
     return instance.get('/homeDropList.json');
@@ -48,7 +51,7 @@ function getVideosList() {
 
 function register(account, password) {
     return axios({
-        url: '/api/student/stuRegister',
+        url: env === 'production' ? 'https://open.duyiedu.com/api/student/stuRegister' : '/api/student/stuRegister',
         method: "post",
         params: {
 
@@ -64,7 +67,7 @@ function register(account, password) {
 
 function login(account, password) {
     return axios({
-        url: '/api/student/stuLogin',
+        url: env === 'production' ? 'https://open.duyiedu.com/api/student/stuLogin' : '/api/student/stuLogin',
         method: "post",
         params: {
 
