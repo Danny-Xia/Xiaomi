@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       imgIndex: 0,
-      changeImgTimer: null
+      changeImgTimer: null,
     };
   },
   created() {

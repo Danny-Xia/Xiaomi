@@ -5,20 +5,25 @@
       <div class="btns">
         <span
           :class="{
-          'el-icon-arrow-left': true,
-          'disabled': prevDisabled
-        }"
+            'el-icon-arrow-left': true,
+            disabled: prevDisabled,
+          }"
           @click="prev"
         ></span>
         <span
           :class="{
-          'el-icon-arrow-right': true, 
-        'disabled': nextDisabled}"
+            'el-icon-arrow-right': true,
+            disabled: nextDisabled,
+          }"
           @click="next"
         ></span>
       </div>
     </div>
-    <div class="shan-gou-content" @mouseenter="enterShangou" @mouseleave="leaveShangou">
+    <div
+      class="shan-gou-content"
+      @mouseenter="enterShangou"
+      @mouseleave="leaveShangou"
+    >
       <div class="seckill">
         <p class="sessions">{{ sessions + ":00 场" }}</p>
         <p class="shandian">
@@ -29,7 +34,7 @@
         </p>
         <p class="surplus">距离结束还有</p>
         <p class="time-box">
-          <span class="time">{{ '0' + overTimeHours }}</span>
+          <span class="time">{{ "0" + overTimeHours }}</span>
           <span class="time-box-other">:</span>
           <span class="time">{{ overTimeMinute }}</span>
           <span class="time-box-other">:</span>
@@ -37,9 +42,13 @@
         </p>
       </div>
       <div class="shan-swiper">
-        <ul id="shan-swiper-content" :style="'left:' + oUlLeft + 'px'" @transitionend="handleLock">
+        <ul
+          id="shan-swiper-content"
+          :style="'left:' + oUlLeft + 'px'"
+          @transitionend="handleLock"
+        >
           <li
-            v-for="(item,index) in shangouList"
+            v-for="(item, index) in shangouList"
             :key="item.id"
             :data-index="index"
             :class="`shan-swiper-item-${index}`"
@@ -134,9 +143,6 @@ export default {
       }
     },
     handleLock() {
-      if(this.nowPage === 4) {
-        return;
-      }
       this.lock = false;
     },
     prev() {
@@ -153,32 +159,33 @@ export default {
     },
     move(dir = "right") {
       if (!this.lock) {
+        
         const oUl = document.getElementById("shan-swiper-content");
-       if(oUl) {
+        if (oUl) {
           this.lock = true;
-        dir === 'left' ? this.nowPage -= 1 : this.nowPage += 1;
-        let moveRange = 0;
-        const oUlLeft = oUl.offsetLeft;
-        if (this.nowPage === this.totalPage) {
-          moveRange = this.liWidth * this.remainder + this.remainder * 14;
-        } else {
-          if (dir === "left" && this.nowPage === this.totalPage - 1) {
+          dir === "left" ? (this.nowPage -= 1) : (this.nowPage += 1);
+          let moveRange = 0;
+          const oUlLeft = oUl.offsetLeft;
+          if (this.nowPage === this.totalPage) {
             moveRange = this.liWidth * this.remainder + this.remainder * 14;
           } else {
-            moveRange = 14 * 4 + this.liWidth * 4; //移动距离
+            if (dir === "left" && this.nowPage === this.totalPage - 1) {
+              moveRange = this.liWidth * this.remainder + this.remainder * 14;
+            } else {
+              moveRange = 14 * 4 + this.liWidth * 4; //移动距离
+            }
           }
+          if (this.nowPage === this.totalPage) {
+            this.nextDisabled = true;
+          } else if (this.nowPage === 1) {
+            this.prevDisabled = true;
+          } else {
+            this.nextDisabled = false;
+            this.prevDisabled = false;
+          }
+          this.oUlLeft =
+            dir === "left" ? oUlLeft + moveRange : oUlLeft - moveRange;
         }
-        if(this.nowPage === this.totalPage) {
-          this.nextDisabled = true;
-        } else if (this.nowPage === 1){
-          this.prevDisabled = true;
-        } else {
-          this.nextDisabled = false;
-          this.prevDisabled = false;
-          
-        }
-        this.oUlLeft = dir === "left" ? oUlLeft + moveRange : oUlLeft - moveRange;
-       }
       }
     },
     autoMove() {
@@ -191,13 +198,13 @@ export default {
         } else {
           this.move();
         }
-      }, 5000);
+      }, 2000);
     },
     enterShangou() {
       clearInterval(this.autoMoveTimer);
     },
     leaveShangou() {
-        this.autoMove();
+      this.autoMove();
     },
   },
 };

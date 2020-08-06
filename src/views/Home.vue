@@ -36,7 +36,7 @@
 				<advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9880db34d227b6c1df5b45cb7df4f465.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
 				<other-pub :data-list="'配件'" />
 				<advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ddec858a9371b4d7833181941520bf8b.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
-				<other-pub :data-list="'周边'" />>
+				<other-pub :data-list="'周边'" />
 				<advert img-src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1533&h=150&f=webp&q=90" />
 				<m-video-sub />
 				<tools-bar />

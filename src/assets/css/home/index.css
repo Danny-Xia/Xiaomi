@@ -1,0 +1,100 @@
+.home {
+  position: relative;
+  width: 100vw;
+  min-width: 1226px;
+  top: -20px;
+  left: -10px;
+}
+.home .home-top {
+  background-color: #fff;
+}
+.home .home-top .main {
+  width: 1226px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+}
+.home .home-top .channel-box {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+.home .home-top .channel-box .channel-box-content {
+  width: 1226px;
+  margin: 0 auto;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+.home .home-top .channel-box .channel-box-content .channel-list {
+  width: 234px;
+  height: 100%;
+  background-color: #5f5750;
+  float: left;
+}
+.home .home-top .channel-box .channel-box-content .channel-list li {
+  display: inline-block;
+  width: calc(234px / 3);
+  height: calc(170px / 2);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  opacity: 0.7;
+  padding-top: 20px;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.home .home-top .channel-box .channel-box-content .channel-list li img {
+  width: 24px;
+  height: 24px;
+}
+.home .home-top .channel-box .channel-box-content .channel-list li p {
+  font-size: 12px;
+}
+.home .home-top .channel-box .channel-box-content .channel-list li::before,
+.home .home-top .channel-box .channel-box-content .channel-list li::after {
+  content: '';
+  position: absolute;
+  background-color: #665e57;
+  width: 80%;
+  height: 1px;
+}
+.home .home-top .channel-box .channel-box-content .channel-list li::before {
+  left: calc(50% - 40%);
+  top: 2px;
+}
+.home .home-top .channel-box .channel-box-content .channel-list li::after {
+  left: -30px;
+  top: 44px;
+  transform: rotateZ(90deg);
+}
+.home .home-top .channel-box .channel-box-content .channel-list li:hover {
+  opacity: 1;
+}
+.home .home-top .channel-box .channel-box-content .promo-list {
+  box-sizing: border-box;
+  width: 978px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .home-top .channel-box .channel-box-content .promo-list li {
+  width: 316px;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.home .home-top .channel-box .channel-box-content .promo-list li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.home .home-top .channel-box .channel-box-content .promo-list li img {
+  width: 100%;
+  height: 100%;
+}
+.home .home-bottom {
+  width: 100%;
+}
+.home .home-bottom .home-bottom-content {
+  width: 1226px;
+  margin: 0 auto;
+}
